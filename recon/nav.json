@@ -1,0 +1,33 @@
+{
+  "navLinks": [
+    {
+      "text": "",
+      "href": "https://www.theuniversitysustainabilityinitiative.org/"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.theuniversitysustainabilityinitiative.org/about-us"
+    },
+    {
+      "text": "Events",
+      "href": "https://www.theuniversitysustainabilityinitiative.org/events"
+    },
+    {
+      "text": "Projects",
+      "href": "https://www.theuniversitysustainabilityinitiative.org/s-projects-side-by-side"
+    },
+    {
+      "text": "Entrepreneurship",
+      "href": "https://www.theuniversitysustainabilityinitiative.org/business-development-competition"
+    }
+  ],
+  "footerText": " \n\n© 2026 by The University Sustainability Initiative. ",
+  "footerLinks": [],
+  "favicon": [
+    "https://static.wixstatic.com/media/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg",
+    "https://static.wixstatic.com/media/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg",
+    "https://static.wixstatic.com/media/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/be068c_98136ea391fb41af92816fc5566a4f18%7Emv2.jpg"
+  ],
+  "metaDesc": "USI is a multi-university organisation dedicated to supporting student interest in sustainability-related academics; constituent university societies open up projects that would otherwise only be open to that university´s student body, giving more students access to exciting hands-on projects and competitions. ",
+  "title": "USI: Bringing exciting opportunities to students"
+}

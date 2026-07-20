@@ -1,0 +1,72 @@
+[
+  {
+    "src": "https://static.wixstatic.com/media/be068c_5e8049da239f4069a742c6bb2a9f8f38~mv2.png/v1/fill/w_838,h_231,al_c,lg_1,q_85,enc_avif,quality_auto/be068c_5e8049da239f4069a742c6bb2a9f8f38~mv2.png",
+    "alt": "image.png",
+    "rect": {
+      "x": 410,
+      "y": 463.828125,
+      "width": 620,
+      "height": 171,
+      "top": 463.828125,
+      "right": 1030,
+      "bottom": 634.828125,
+      "left": 410
+    }
+  },
+  {
+    "src": "https://static.wixstatic.com/media/be068c_7a25106c5b524b35b29dcfefbf1b1e2d~mv2.png/v1/fill/w_244,h_244,al_c,lg_1,q_85,enc_avif,quality_auto/be068c_7a25106c5b524b35b29dcfefbf1b1e2d~mv2.png",
+    "alt": "image.png",
+    "rect": {
+      "x": 589,
+      "y": 648.828125,
+      "width": 122,
+      "height": 122,
+      "top": 648.828125,
+      "right": 711,
+      "bottom": 770.828125,
+      "left": 589
+    }
+  },
+  {
+    "src": "https://static.wixstatic.com/media/be068c_674059fabfdd442e9de139abc7ffe601~mv2.png/v1/fill/w_228,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_674059fabfdd442e9de139abc7ffe601~mv2.png",
+    "alt": "image.png",
+    "rect": {
+      "x": 593,
+      "y": 749.828125,
+      "width": 114,
+      "height": 37,
+      "top": 749.828125,
+      "right": 707,
+      "bottom": 786.828125,
+      "left": 593
+    }
+  },
+  {
+    "src": "https://static.wixstatic.com/media/be068c_9253bb2aec0a44ac877c05a70438b14e~mv2.png/v1/fill/w_346,h_116,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_9253bb2aec0a44ac877c05a70438b14e~mv2.png",
+    "alt": "image.png",
+    "rect": {
+      "x": 736,
+      "y": 682.828125,
+      "width": 173,
+      "height": 58,
+      "top": 682.828125,
+      "right": 909,
+      "bottom": 740.828125,
+      "left": 736
+    }
+  },
+  {
+    "src": "https://static.wixstatic.com/media/be068c_61763e1efd314fcf8f079b90488e1f1a~mv2.png/v1/fill/w_144,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_61763e1efd314fcf8f079b90488e1f1a~mv2.png",
+    "alt": "image.png",
+    "rect": {
+      "x": 786,
+      "y": 743.828125,
+      "width": 72,
+      "height": 49,
+      "top": 743.828125,
+      "right": 858,
+      "bottom": 792.828125,
+      "left": 786
+    }
+  }
+]

@@ -1,0 +1,22 @@
+html, body { margin: 0; padding: 0; }
+* { box-sizing: border-box; }
+#page-root { position: relative; }
+main#PAGES_CONTAINER { display: block; position: relative; }
+.page-sections { position: relative; }
+#SITE_HEADER, #SITE_FOOTER, .wixui-section { position: relative; }
+
+/* Scroll/entrance reveal transitions, replaying the effect Wix plays on these
+   same elements (marked by data-motion-enter on the live site) via JS below. */
+[data-motion-enter] {
+  animation: none !important;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+[data-motion-enter].revealed {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-motion-enter] { opacity: 1; transform: none; transition: none; }
+}

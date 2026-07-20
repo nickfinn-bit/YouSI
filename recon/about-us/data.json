@@ -1,0 +1,188 @@
+{
+  "title": "About Us | USI",
+  "docHeight": 3804,
+  "docWidth": 1440,
+  "sections": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": "comp-mpuahaq7",
+      "cls": "Le88gL comp-mpuahaq7 wixui-section",
+      "rect": {
+        "x": 0,
+        "y": 126,
+        "w": 1440,
+        "h": 705
+      },
+      "text": "Committee Applications Open! |  | The University Sustainability Initiative has opened applications for the 2026/2027 positio"
+    },
+    {
+      "index": 1,
+      "tag": "section",
+      "id": "comp-mg85sg4d",
+      "cls": "Le88gL comp-mg85sg4d wixui-section",
+      "rect": {
+        "x": 0,
+        "y": 831,
+        "w": 1440,
+        "h": 1288
+      },
+      "text": "About Us |  | We are the representatives of the Energy Societies from Oxford, Imperial, UCL and Cambridge. Collaborating to "
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "id": "comp-mpglf6yb",
+      "cls": "Le88gL comp-mpglf6yb wixui-section",
+      "rect": {
+        "x": 0,
+        "y": 2119,
+        "w": 1440,
+        "h": 1641
+      },
+      "text": "Our Oversight Board |  | Dr David Reiner is a highly valued advisor to USI; allowing for ensured continuous quality for part"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://static.wixstatic.com/media/be068c_6485d91e47c941e69303a6836ba7a299~mv2.png/v1/crop/x_91,y_110,w_582,h_248/fill/w_526,h_224,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TUSI%20Logo_edited.png",
+      "alt": "TUSI Logo_edited.png",
+      "w": 263,
+      "h": 112
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_d10f9b005b9e41c3b034e9858efd6b09~mv2.jpg/v1/fill/w_1920,h_940,al_c,q_85,enc_avif,quality_auto/be068c_d10f9b005b9e41c3b034e9858efd6b09~mv2.jpg",
+      "alt": "thumb-1920-928702.jpg",
+      "w": 1920,
+      "h": 940
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_b61e8559892a48c9a9d40cd921019862~mv2.jpg/v1/fill/w_790,h_592,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2024-11-16-18-44-27.jpg",
+      "alt": "PHOTO-2024-11-16-18-44-27.jpg",
+      "w": 395,
+      "h": 296
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_1bf7b5a7914d4788bc15ecfc94e1d844~mv2.jpg/v1/crop/x_0,y_677,w_1536,h_1152/fill/w_790,h_592,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_1bf7b5a7914d4788bc15ecfc94e1d844~mv2.jpg",
+      "alt": "2025EnergySocPic.jpg",
+      "w": 395,
+      "h": 296
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_fff4bb6f8bb1427cad1cac7d6c4bade9~mv2.png/v1/fill/w_202,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/modified_image-bst%20(1).png",
+      "alt": "modified_image-bst (1).png",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_cab15f805f8e48efbaf514addb5b6379~mv2.jpg/v1/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imagen%20de%20WhatsApp%202025-10-04%20a%20las%2011_11_26_0aa5e2d5Xin.jpg",
+      "alt": "Imagen de WhatsApp 2025-10-04 a las 11.11.26_0aa5e2d5Xin.jpg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_0d7d69a5a6224181a8511d4d305c713a~mv2.png/v1/fill/w_202,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/linkedin-photoMax.png",
+      "alt": "linkedin-photoMax.png",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_6f006b8f72064955899f95e46f15bec6~mv2.jpeg/v1/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Eamon.jpeg",
+      "alt": "Eamon.jpeg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_c61d80b81b094d90a6c5561bbe72f220~mv2.jpg/v1/crop/x_73,y_190,w_588,h_879/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imagen%20de%20WhatsApp%202025-10-05%20a%20las%2004_47_39_62c736f9sneh.jpg",
+      "alt": "Imagen de WhatsApp 2025-10-05 a las 04.47.39_62c736f9sneh.jpg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_8bafc4450e2d4d008a35da2b6ebe8410~mv2.jpg/v1/fill/w_712,h_404,al_c,lg_1,q_80,enc_avif,quality_auto/be068c_8bafc4450e2d4d008a35da2b6ebe8410~mv2.jpg",
+      "alt": "david-reiner-703x396-1.jpg",
+      "w": 356,
+      "h": 202
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_fff4bb6f8bb1427cad1cac7d6c4bade9~mv2.png/v1/fill/w_202,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/modified_image-bst%20(1).png",
+      "alt": "modified_image-bst (1).png",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_cab15f805f8e48efbaf514addb5b6379~mv2.jpg/v1/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imagen%20de%20WhatsApp%202025-10-04%20a%20las%2011_11_26_0aa5e2d5Xin.jpg",
+      "alt": "Imagen de WhatsApp 2025-10-04 a las 11.11.26_0aa5e2d5Xin.jpg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_0d7d69a5a6224181a8511d4d305c713a~mv2.png/v1/fill/w_202,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/linkedin-photoMax.png",
+      "alt": "linkedin-photoMax.png",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_6f006b8f72064955899f95e46f15bec6~mv2.jpeg/v1/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Eamon.jpeg",
+      "alt": "Eamon.jpeg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_c61d80b81b094d90a6c5561bbe72f220~mv2.jpg/v1/crop/x_73,y_190,w_588,h_879/fill/w_202,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imagen%20de%20WhatsApp%202025-10-05%20a%20las%2004_47_39_62c736f9sneh.jpg",
+      "alt": "Imagen de WhatsApp 2025-10-05 a las 04.47.39_62c736f9sneh.jpg",
+      "w": 101,
+      "h": 151
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_d8a61e6173a8495ba0cc6f71b416a826~mv2.jpg/v1/crop/x_124,y_147,w_251,h_373/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_d8a61e6173a8495ba0cc6f71b416a826~mv2.jpg",
+      "alt": "1748894310868.jpg",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_78b56930d6554b479d9200a7bdefd05d~mv2.jpg/v1/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_78b56930d6554b479d9200a7bdefd05d~mv2.jpg",
+      "alt": "1753706302206.jpg",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_effe36d46d7a4f0ab0d9ee8785a87cd2~mv2.jpg/v1/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_effe36d46d7a4f0ab0d9ee8785a87cd2~mv2.jpg",
+      "alt": "1758315436612.jpg",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_dfba635cd5ca4e54b6ba1dfe1b0be26d~mv2.png/v1/fill/w_202,h_288,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_dfba635cd5ca4e54b6ba1dfe1b0be26d~mv2.png",
+      "alt": "1778752716587.png",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_40494dfc56a34784bd8c6072eb118499~mv2.jpg/v1/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_40494dfc56a34784bd8c6072eb118499~mv2.jpg",
+      "alt": "1750550395733.jpg",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_6cf7c3ba4c8947cbb2bc94e42bf1b92a~mv2.jpeg/v1/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_6cf7c3ba4c8947cbb2bc94e42bf1b92a~mv2.jpeg",
+      "alt": "Arthur Yen, Climate Report Management.jpeg",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_bf1f955e4df94ec5ab559f5143a2c0f9~mv2.png/v1/fill/w_202,h_288,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/be068c_bf1f955e4df94ec5ab559f5143a2c0f9~mv2.png",
+      "alt": "1763489992048.png",
+      "w": 101,
+      "h": 144
+    },
+    {
+      "src": "https://static.wixstatic.com/media/be068c_dcfcbe8cdc26429a956dac158e049062~mv2.jpeg/v1/fill/w_202,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6IMG_4299_jpg.jpeg",
+      "alt": "6IMG_4299.jpg.jpeg",
+      "w": 101,
+      "h": 144
+    }
+  ],
+  "headerId": "SITE_HEADER",
+  "footerId": "SITE_FOOTER"
+}

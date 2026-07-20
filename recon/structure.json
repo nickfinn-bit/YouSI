@@ -1,0 +1,647 @@
+{
+  "title": "USI: Bringing exciting opportunities to students",
+  "bodyChildren": [
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "pageHtmlEmbeds.bodyStart start",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "pageHtmlEmbeds.bodyStart end",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "wix-first-paint",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "scroll-bar-width-calculation",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "svg",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 1
+    },
+    {
+      "tag": "div",
+      "id": "SITE_CONTAINER",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 1812.828125
+      },
+      "childCount": 1
+    },
+    {
+      "tag": "script",
+      "id": "wix-skip-played-animations",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "wix-fedops",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "link",
+      "id": "features_masterPage",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "link",
+      "id": "features_suyqo",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "link",
+      "id": "platform_masterPage",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "link",
+      "id": "platform_suyqo",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "sentryOnLoadSetup",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "sentry",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "wix-viewer-model",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "used-platform-apis-data",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": null,
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "pageHtmlEmbeds.bodyEnd start",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "pageHtmlEmbeds.bodyEnd end",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    },
+    {
+      "tag": "script",
+      "id": "wix-warmup-data",
+      "classes": null,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "childCount": 0
+    }
+  ],
+  "mainSelector": "main#PAGES_CONTAINER",
+  "mainChildren": [
+    {
+      "tag": "div",
+      "id": "SITE_PAGES",
+      "classes": "Y3K28_ SITE_PAGES",
+      "rect": {
+        "x": 0,
+        "y": 126,
+        "w": 1440,
+        "h": 1643.640625
+      },
+      "childCount": 1
+    }
+  ],
+  "docHeight": 1813,
+  "docWidth": 1440,
+  "stylesheets": [],
+  "scripts": [
+    "https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js",
+    "https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js",
+    "https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_bootstrap.636dfe06.bundle.min.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_bootstrap-classic.9ea7b71c.bundle.min.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[FooterContainer_DefaultWithFillLayers].9db62bfb.bundle.min.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[SkipToContentButton].34a41125.bundle.min.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[StripColumnsContainer_Default].2fe8a608.bundle.min.js",
+    "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[ClassicSection].2fcc7d9e.bundle.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/unpkg/lodash@4.17.23/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.50b72334.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.e6f04ef2.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.99fa8096.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1066.0/siteTags.bundle.min.js"
+  ],
+  "inlineStyleTags": 14,
+  "inlineScriptTags": 49,
+  "fonts": [],
+  "metaGenerator": "Wix.com Website Builder"
+}

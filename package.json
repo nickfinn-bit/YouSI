@@ -1,0 +1,25 @@
+{
+  "name": "yousi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickfinn-bit/YouSI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nickfinn-bit/YouSI/issues"
+  },
+  "homepage": "https://github.com/nickfinn-bit/YouSI#readme",
+  "devDependencies": {
+    "image-size": "^2.0.2",
+    "puppeteer": "^25.3.0"
+  }
+}

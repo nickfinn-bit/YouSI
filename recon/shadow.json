@@ -1,0 +1,70 @@
+{
+  "total": 108,
+  "shadowCount": 0,
+  "firstLevels": [
+    {
+      "depth": 0,
+      "tag": "div",
+      "id": "SITE_PAGES",
+      "cls": "Y3K28_ SITE_PAGES",
+      "dataTestId": null,
+      "hasShadow": false
+    },
+    {
+      "depth": 1,
+      "tag": "div",
+      "id": "SITE_PAGES_TRANSITION_GROUP",
+      "cls": "uvik8H",
+      "dataTestId": null,
+      "hasShadow": false
+    },
+    {
+      "depth": 2,
+      "tag": "div",
+      "id": "suyqo",
+      "cls": "i0StQr theme-vars suyqo",
+      "dataTestId": null,
+      "hasShadow": false
+    },
+    {
+      "depth": 3,
+      "tag": "div",
+      "id": null,
+      "cls": "pTvOx2 wixui-page",
+      "dataTestId": "page-bg",
+      "hasShadow": false
+    },
+    {
+      "depth": 3,
+      "tag": "div",
+      "id": null,
+      "cls": "JJb9Mt",
+      "dataTestId": null,
+      "hasShadow": false
+    },
+    {
+      "depth": 4,
+      "tag": "div",
+      "id": "Containersuyqo",
+      "cls": "Containersuyqo wH18kY",
+      "dataTestId": null,
+      "hasShadow": false
+    },
+    {
+      "depth": 5,
+      "tag": "div",
+      "id": null,
+      "cls": null,
+      "dataTestId": "inline-content",
+      "hasShadow": false
+    },
+    {
+      "depth": 6,
+      "tag": "div",
+      "id": null,
+      "cls": null,
+      "dataTestId": "mesh-container-content",
+      "hasShadow": false
+    }
+  ]
+}
