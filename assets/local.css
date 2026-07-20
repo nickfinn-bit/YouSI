@@ -5,6 +5,10 @@ main#PAGES_CONTAINER { display: block; position: relative; }
 .page-sections { position: relative; }
 #SITE_HEADER, #SITE_FOOTER, .wixui-section { position: relative; }
 
+/* More breathing room in the footer - the Wix export had 0 padding, text sat
+   flush against the top/bottom edges. */
+#SITE_FOOTER { padding: 28px 0 44px; }
+
 /* Scroll/entrance reveal transitions, replaying the effect Wix plays on these
    same elements (marked by data-motion-enter on the live site) via JS below. */
 [data-motion-enter] {
