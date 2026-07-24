@@ -1,5 +1,16 @@
 html, body { margin: 0; padding: 0; }
 * { box-sizing: border-box; }
+
+/* Section background images were exported from Wix with a frozen inline
+   `width:1440px; height:...px` (the capture viewport size). That inline style
+   overrides the stylesheet's `.fO4mKs img { width:100% }` rule, so on screens
+   wider than 1440px the image stops short and the page background shows through
+   on the right. Force these full-bleed background images back to fill. */
+.fO4mKs img,
+[data-motion-part^="BG_IMG"] img {
+  width: 100% !important;
+  height: 100% !important;
+}
 #page-root { position: relative; }
 main#PAGES_CONTAINER { display: block; position: relative; }
 .page-sections { position: relative; }
@@ -23,4 +34,147 @@ main#PAGES_CONTAINER { display: block; position: relative; }
 }
 @media (prefers-reduced-motion: reduce) {
   [data-motion-enter] { opacity: 1; transform: none; transition: none; }
+}
+
+/* ============================================================
+   RESPONSIVE LAYER (phones + tablets)
+   ------------------------------------------------------------
+   This site was exported from Wix as a fixed 980px desktop
+   canvas: every section carries `min-width:980px`, and elements
+   are placed with fixed pixel offsets plus a
+   `calc((100% - 980px) * 0.5)` centering margin, all inside Wix
+   "mesh" grid containers. Below 980px those offsets push content
+   off-screen and force horizontal scrolling.
+
+   Strategy: below 980px, drop the 980px floor and collapse every
+   mesh container into a plain top-to-bottom stack (full width,
+   no fixed offsets, fluid headings). Desktop (>=981px) keeps the
+   original Wix layout untouched.
+   ============================================================ */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+@media (max-width: 980px) {
+  /* 1. Remove the 980px minimum so sections shrink to the screen. */
+  #SITE_HEADER, #SITE_FOOTER,
+  .wixui-section, .wixui-column-strip,
+  [id^="comp-"] { min-width: 0 !important; }
+
+  /* 2. Cap every component to the screen width (never wider), and collapse
+        Wix mesh positioning containers into a plain vertical stack. We cap
+        with max-width rather than forcing width:auto, so fixed-size things
+        (icons, the logo, content boxes) keep their real proportions instead
+        of being stretched. display:block makes children flow in DOM order,
+        which avoids the overlap caused by shared grid-areas. */
+  [id^="comp-"], [class*="wixui-box"] { max-width: 100% !important; }
+  /* Wix content wrappers and rich-text blocks keep a fixed desktop pixel
+     width (e.g. a 629px text column inside a capped box); pin them to their
+     parent so text reflows instead of overflowing. */
+  [data-mesh-id$="inlineContent"] { width: 100% !important; max-width: 100% !important; }
+  .wixui-rich-text { width: auto !important; max-width: 100% !important; }
+  [data-mesh-id$="-gridContainer"] {
+    display: block !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  [data-mesh-id$="-gridContainer"] > * {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  /* 3. Stack side-by-side column strips (e.g. text | image blocks). */
+  .Ak0vpt { flex-direction: column !important; width: 100% !important; }
+  .Ak0vpt > * { width: 100% !important; }
+
+  /* 4. Images scale down proportionally and never stretch. */
+  .wixui-image img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+
+  /* 5. Fluid display headings (were fixed at 56–96px). */
+  .font_0, .font_0 span,
+  .font_2, .font_2 span {
+    font-size: clamp(28px, 7vw, 46px) !important;
+    line-height: 1.15 !important;
+  }
+
+  /* 6. Header -> centred, wrapping nav.
+        On desktop each nav link is an absolutely-positioned hit area
+        (position:absolute; inset:0) inside a fixed 104x19px box, so when the
+        columns wrap the labels stack on top of each other. Turn the links
+        back into normal inline boxes that size to their text. */
+  #SITE_HEADER, #comp-mfqwwdjq { height: auto !important; }
+  #comp-mfqwwdjq { width: 100% !important; margin: 0 !important; }
+  #comp-mfqwwdjq .Ak0vpt {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px 18px !important;
+  }
+  /* The header columns default to `flex: 196 1 0%` (flex-basis 0), which
+     collapses them to ~0px on a narrow screen; max-width:100% then cascades
+     that collapse onto the logo and nav labels. Size columns to content. */
+  #comp-mfqwwdjq .Ak0vpt > * {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  /* Flatten every header sub-container into a centred, wrapping row so all
+     nav links share one clean baseline (Projects + Entrepreneurship live in
+     one column on desktop), and strip the leftover desktop vertical margins
+     that otherwise leave big gaps between wrapped links. */
+  #SITE_HEADER [data-mesh-id$="-gridContainer"] {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px 18px !important;
+    padding: 0 !important;
+  }
+  #SITE_HEADER .mu5PoX,
+  #SITE_HEADER .W4V2qg { margin: 4px 0 !important; }
+  #SITE_HEADER .mu5PoX {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  #SITE_HEADER .mu5PoX .twJknM {
+    position: relative !important;
+    inset: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+  #SITE_HEADER .mu5PoX .OR4Nv8 { position: relative !important; }
+
+  /* Logo: sensible fixed size, centred at the top of the header. */
+  #comp-mfqwwdjz, #comp-mfqwwdjz img {
+    width: 200px !important;
+    height: auto !important;
+  }
+  #comp-mfqwwdjz { margin: 8px auto !important; }
+
+  /* 7. Compress the oversized vertical gaps the 980px desktop canvas baked in
+        between stacked column-strips (e.g. a 150px top margin before the
+        "2025/2026 Projects" heading), which otherwise leave big empty bands on
+        phones. A class selector + !important overrides the per-id desktop
+        margin. Scoped to page content; the header is handled above. */
+  main .wixui-column-strip { margin-top: 20px !important; }
+
+  /* 8. Some hero content boxes keep a large top margin (used to vertically
+        centre them within a tall fixed-height section). With no border/padding
+        in between, that margin collapses outward and leaves a big empty band
+        above the first section instead of sitting over the hero image. Give
+        each section (and the containers) a block-formatting context so the
+        spacing stays inside the hero, over its background. */
+  main#PAGES_CONTAINER, .page-sections,
+  main .wixui-section { display: flow-root !important; }
 }
