@@ -1,3 +1,4 @@
+// Still writes to site/, not the root: the live index.html and assets/site.css have been edited by hand since this built them from recon/ in July 2026, and a rebuild there would overwrite those edits.
 const fs = require('fs');
 const path = require('path');
 const { rewriteNavLinks } = require('./nav-links');

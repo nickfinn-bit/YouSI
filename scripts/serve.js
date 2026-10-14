@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..', 'site');
+const ROOT = path.join(__dirname, '..');
 const PORT = process.env.PORT || 5500;
 
 const MIME = {
@@ -16,7 +16,8 @@ http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0]);
   if (p.endsWith('/')) p += 'index.html';
   const full = path.join(ROOT, p);
-  if (!full.startsWith(ROOT)) { res.writeHead(403); return res.end(); }
+  // The root holds .git/ too: like GitHub Pages, serve nothing under a dot-name.
+  if (!full.startsWith(ROOT + path.sep) || /[\\/]\./.test(full.slice(ROOT.length))) { res.writeHead(403); return res.end(); }
   fs.readFile(full, (err, data) => {
     if (err) { res.writeHead(404); return res.end('not found: ' + p); }
     const ext = path.extname(full);

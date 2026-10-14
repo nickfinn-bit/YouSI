@@ -5,7 +5,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const outDir = path.join(__dirname, '..', 'site', 'assets', 'images');
+const outDir = path.join(__dirname, '..', 'assets', 'images');
 fs.mkdirSync(outDir, { recursive: true });
 
 const mediaUrls = [

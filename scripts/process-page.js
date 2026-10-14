@@ -16,8 +16,10 @@ if (!url || !slug) { console.error('usage: node process-page.js <url> <slug>'); 
 
 const ROOT = path.join(__dirname, '..');
 const RECON = path.join(ROOT, 'recon', slug);
-const IMG_DIR = path.join(ROOT, 'site', 'assets', 'images');
-const DOC_DIR = path.join(ROOT, 'site', 'assets', 'documents');
+// Only missing files are downloaded, so nothing here is overwritten, but one
+// removed on purpose can come back: check git status before staging assets/.
+const IMG_DIR = path.join(ROOT, 'assets', 'images');
+const DOC_DIR = path.join(ROOT, 'assets', 'documents');
 fs.mkdirSync(RECON, { recursive: true });
 fs.mkdirSync(IMG_DIR, { recursive: true });
 fs.mkdirSync(DOC_DIR, { recursive: true });

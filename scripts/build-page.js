@@ -1,3 +1,4 @@
+// Still writes to site/<slug>/, not the root: the live pages have been edited by hand since this built them from recon/ in July 2026, and a rebuild there would overwrite those edits.
 // Assemble a subpage from its extracted section fragments + shared header/footer.
 const fs = require('fs');
 const path = require('path');
