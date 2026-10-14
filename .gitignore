@@ -1,0 +1,4 @@
+# npm packages for scripts/; npm install puts them back from package-lock.json
+node_modules/
+# Working material from rebuilding the site, kept on disk only
+/recon/
