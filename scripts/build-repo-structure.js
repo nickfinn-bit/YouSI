@@ -6,7 +6,8 @@
  * The tree is git's view of the repository: `git ls-files` plus untracked files
  * that are not ignored. It never looks inside .git, node_modules or caches; a
  * top-level one that git sees is still drawn and must be named. Ignored root
- * entries are listed in the footer. It draws first, then exits 1 if any
+ * entries are listed in the footer, with what IGNORED says they hold. It draws
+ * first, then exits 1 if any
  * top-level entry has no line in FOLDERS or FILES below, so nothing new reaches
  * the root without saying what it is.
  *
@@ -43,25 +44,19 @@ const FOLDERS = {
     + 'in 2026-27/posters/',
   scripts: 'Node tools, run by hand, that rebuilt the old Wix site as these static '
     + 'pages in July 2026. recon*.js, recon-page.js and extract-*.js scraped it into '
-    + 'recon/; process-page.js, download-images.js, build.js and build-page.js made '
-    + 'pages from that, with nav-links.js mapping the old links; serve.js, '
-    + 'shot-local*.js, final-check.js, click-nav-test.js and debug-section0.js '
-    + 'served and checked the copy on localhost:5500. The five that write or serve '
-    + 'pages still point at site/, where the pages lived before they moved to the '
-    + 'root. Also build-repo-structure.js, which draws this picture',
-  recon: 'Working material, not part of the site: the July 2026 scrape of the old '
-    + 'Wix site the pages were built from (HTML, CSS, layout data and screenshots; '
-    + 'a folder for each page but the home page, whose files sit at the top; logos/ '
-    + 'for its logo images), and screenshots of the rebuilt pages taken while '
-    + 'building them. The usi-*/ folders, not in git, hold screenshots and a '
-    + 'preview PDF from later checks of changes to the Projects page',
-  node_modules: 'The npm packages package.json asks for, and the packages they '
-    + 'need: puppeteer, which scripts/ uses, and image-size, which nothing here '
-    + 'calls. Committed to git; nothing ignores it',
+    + 'recon/, which git ignores; process-page.js, download-images.js, build.js and '
+    + 'build-page.js made pages from that, with nav-links.js mapping the old links; '
+    + 'serve.js, shot-local*.js, final-check.js, click-nav-test.js and '
+    + 'debug-section0.js served and checked the copy on localhost:5500. build.js and '
+    + 'build-page.js still write to site/ on purpose: a rebuild at the root would '
+    + 'overwrite the edits made to the pages since. Also build-repo-structure.js, '
+    + 'which draws this picture',
 };
 
 const FILES = {
   'index.html': 'The home page, /',
+  '.gitignore': 'Keeps node_modules/ and recon/ out of git, and so off the site: '
+    + 'see the foot of this picture',
   CNAME: 'The custom domain GitHub Pages serves the site on, '
     + 'theuniversitysustainabilityinitiative.org',
   'REPO-STRUCTURE.png': 'This picture, drawn by scripts/build-repo-structure.js',
@@ -70,13 +65,19 @@ const FILES = {
   'package-lock.json': 'Exact package versions, as npm pinned them',
 };
 
-/* Entries at the root that belong elsewhere, and where. A proposal: nothing is
- * moved by this script. */
-const LOOSE = {
-  node_modules: 'out of git: a .gitignore naming node_modules/, then git rm -r '
-    + '--cached node_modules. npm install puts it back on disk',
-  recon: 'out of git: a .gitignore naming recon/, then git rm -r --cached recon. '
-    + 'It stays on disk, where scripts/ writes it, but leaves the published site',
+/* Entries at the root that belong elsewhere, and where, drawn in amber. A
+ * proposal: nothing is moved by this script. */
+const LOOSE = {};
+
+/* What the root entries .gitignore names hold, for the footer. */
+const IGNORED = {
+  node_modules: 'The npm packages package.json asks for, and the packages they '
+    + 'need: puppeteer, which scripts/ uses, and image-size, which nothing here '
+    + 'calls. npm install puts them back',
+  recon: 'Working material, kept on disk only: the July 2026 scrape of the old Wix '
+    + 'site the pages were built from, which scripts/ reads and writes, screenshots '
+    + 'of the rebuilt pages, and screenshots and a preview PDF from later checks of '
+    + 'changes to the Projects page',
 };
 
 function git(...args) {
@@ -166,9 +167,11 @@ function page({ folders, files, tracked, skipped }, unnamed) {
   const ignored = ignoredAtRoot();
   const offView = fs.readdirSync(ROOT, { withFileTypes: true })
     .filter((d) => !drawn.has(d.name) && d.name !== '.git')
-    .map((d) => ({ name: d.name + (d.isDirectory() ? '/' : ''), ignored: ignored.has(d.name) }));
-  const ignoredNames = offView.filter((e) => e.ignored).map((e) => e.name).sort(byName);
+    .map((d) => ({ key: d.name, name: d.name + (d.isDirectory() ? '/' : ''), ignored: ignored.has(d.name) }));
+  const ignoredRows = offView.filter((e) => e.ignored).sort((a, b) => byName(a.name, b.name))
+    .map((e) => `<div class="row"><div class="name">${esc(e.name)}</div><div>${esc(IGNORED[e.key] || '')}</div></div>`);
   const otherNames = offView.filter((e) => !e.ignored).map((e) => e.name).sort(byName);
+  const anyLoose = [...folders.keys(), ...files].some((n) => n in LOOSE);
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
     body { margin: 0; padding: 36px 40px 32px; width: 1720px; font: 15px/1.45 "Segoe UI", system-ui, sans-serif; color: #1f2933; background: #fff; }
@@ -194,16 +197,20 @@ function page({ folders, files, tracked, skipped }, unnamed) {
     .row.loose .name { color: #a15c00; }
     .foot { color: #52606d; font-size: 13.5px; margin-top: 26px; border-top: 1px solid #d9e1ea; padding-top: 10px; }
     .foot p { margin: 0 0 4px; }
+    .foot .ignored { display: grid; grid-template-columns: 1fr; row-gap: 4px; margin: 4px 0 8px 18px; }
+    .foot .row { grid-template-columns: 140px 1fr; }
+    .foot .row .name { font: 600 13.5px/1.45 Consolas, monospace; color: #52606d; }
   </style></head><body>
     <h1>YouSI: what goes where</h1>
-    <p class="sub">The repository behind theuniversitysustainabilityinitiative.org. Every top-level folder and file git sees (tracked, or untracked and not ignored), what goes in each, and the folders one level down. Nothing inside .git, node_modules or caches is drawn.</p>
-    <p class="sub">Redraw with <code>node scripts/build-repo-structure.js</code>, which fails while any top-level entry is unnamed. Grey tag or grey italic: not in git. Amber: loose at the root, with where it belongs. Red: not named.</p>
+    <p class="sub">The repository behind theuniversitysustainabilityinitiative.org. Every top-level folder and file git sees (tracked, or untracked and not ignored), what goes in each, and the folders one level down. What git ignores at the root is listed at the foot.</p>
+    <p class="sub">Redraw with <code>node scripts/build-repo-structure.js</code>, which fails while any top-level entry is unnamed. Grey tag or grey italic: not in git.${anyLoose ? ' Amber: loose at the root, with where it belongs.' : ''} Red: not named.</p>
     <h2>Folders</h2>
     <div class="cards">${cards}</div>
     <h2>Files at the root</h2>
     <div class="files">${rows}</div>
     <div class="foot">
-      <p>Ignored by git at the root, so not drawn: ${ignoredNames.length ? list(ignoredNames) : 'none'}.</p>
+      <p>Ignored by git at the root, so not drawn${ignoredRows.length ? ':' : ': none.'}</p>
+      ${ignoredRows.length ? `<div class="ignored">${ignoredRows.join('\n')}</div>` : ''}
       ${otherNames.length ? `<p>Also on this disk but outside git's view (empty, or holding only ignored files): ${list(otherNames)}.</p>` : ''}
       <p>Not drawn: .git/, git's own store.</p>
     </div>
@@ -243,6 +250,8 @@ async function main() {
   console.log(`drew ${path.basename(OUT)}: ${nTop} top-level entries (${tree.folders.size} folders, `
     + `${tree.files.size} files), ${nSub} second-level folders`);
   if (stale.length) console.log('note: named here but not in the repository: ' + stale.join(', '));
+  const loose = [...tree.folders.keys(), ...tree.files].filter((n) => n in LOOSE).sort(byName);
+  console.log(`loose at the root (amber): ${loose.length ? loose.join(', ') : 'none'}`);
   if (unnamed.size) {
     console.log(`top-level check FAILED: ${unnamed.size} of ${nTop} entries unnamed: `
       + [...unnamed].sort(byName).join(', '));
