@@ -2,3 +2,5 @@
 node_modules/
 # Working material from rebuilding the site, kept on disk only
 /recon/
+# Log of the 26/27 team WhatsApp groups made from the teams sheet: students' names, kept on disk only
+/whatsapp-teams/
