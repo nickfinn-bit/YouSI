@@ -68,8 +68,8 @@ const FILES = {
   'index.html': 'The home page, /',
   'INDEX.md': 'The index of this repository: what the site is and is for, its '
     + 'pages, assets and scripts counted, and what each folder holds',
-  '.gitignore': 'Keeps node_modules/ and recon/ out of git, and so off the site: '
-    + 'see the foot of this picture',
+  '.gitignore': 'Keeps node_modules/, recon/, whatsapp-teams/ and .private/ out of '
+    + 'git, and so off the site: see the foot of this picture',
   CNAME: 'The custom domain GitHub Pages serves the site on, '
     + 'theuniversitysustainabilityinitiative.org',
   'REPO-STRUCTURE.png': 'This picture, drawn by scripts/build-repo-structure.js',
@@ -91,6 +91,15 @@ const IGNORED = {
     + 'site the pages were built from, which scripts/ reads and writes, screenshots '
     + 'of the rebuilt pages, and screenshots and a preview PDF from later checks of '
     + 'changes to the Projects page',
+  '.private': 'Drafts awaiting the owner\'s confirmation before they take effect, '
+    + 'kept on disk only: a draft of the rules for the kinds of file this repository '
+    + 'holds, and the script that checks the files against it',
+  'whatsapp-teams': 'USI\'s WhatsApp groups for the 2026/27 teams, kept on disk only '
+    + 'and not part of the site, because it names students and holds their contact '
+    + 'details: the plan of the groups drawn from the teams sheet, logs of the groups '
+    + 'made, of who could not be added and of each run, and the Node scripts, run by '
+    + 'hand, that make the groups through WhatsApp Web, check them against the sheet '
+    + 'and prepare the phone that is to make the rest',
 };
 
 const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');

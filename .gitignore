@@ -4,3 +4,5 @@ node_modules/
 /recon/
 # Log of the 26/27 team WhatsApp groups made from the teams sheet: students' names, kept on disk only
 /whatsapp-teams/
+# Drafts awaiting the owner's confirmation (a file_formats.md until he types 12111), kept on disk only
+/.private/
